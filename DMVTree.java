@@ -25,7 +25,7 @@ public class DMVTree {
         lateReg = new TreeNode(50, "Late Registration");
         lateReg2 = new TreeNode(30, "> 1 month");
         lateReg1 = new TreeNode(50, "< 1 month");
-        notLateReg = new TreeNode(0, "On Time Registration");
+        notLateReg = new TreeNode(0, "On Time Registration, No Fee");
         car = new TreeNode(30, "Car");
         commercial = new TreeNode(35, "Commercial Vehicle");
         motorcycle = new TreeNode(28, "Motorcycle");
