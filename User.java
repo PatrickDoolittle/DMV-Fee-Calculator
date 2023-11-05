@@ -42,6 +42,7 @@ public class User {
             System.out.println("Receipt for user " + name + ":");
             currency = NumberFormat.getCurrencyInstance();
             for (TreeNode f : receipt) {
+                if (f.getValue() == 0) continue;
                 System.out.println(f.getName() + ": ");
                 if(f.getName().equals("< 1 month") || f.getName().equals("> 1 month"))
                 {

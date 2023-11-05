@@ -24,11 +24,11 @@ public class TreeNode {
             children.add(child);
         }
         public double getValue() {
-            return value;
+            return this.value;
         }
         public String getName()
         {
-            return name;
+            return this.name;
         }
         public List<TreeNode> getChildren() {
             return children;
