@@ -6,16 +6,18 @@ import java.util.List;
 import java.util.Queue;
 
 public class User {
+        private String name;
         private Queue<String> info;
         private List<TreeNode> receipt;
         private double percentage;
         private double sum;
         private NumberFormat currency;
         
-        public User(Queue<String> info) {
+        public User(Queue<String> info, String name) {
             this.sum = 0;
             this.info = info;
             this.receipt  = new ArrayList<>();
+            this.name = name;
             percentage = 0.0;
         }
         
@@ -37,6 +39,7 @@ public class User {
         }
         
         public void displayReceipt() {
+            System.out.println("Receipt for user " + name + ":");
             currency = NumberFormat.getCurrencyInstance();
             for (TreeNode f : receipt) {
                 System.out.println(f.getName() + ": ");

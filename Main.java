@@ -1,4 +1,4 @@
-
+ //Authors: Enrique De la Torre, Patrick Doolittle Kavita Kem, Kevin Zhang, Eric Cheyssial
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
@@ -13,12 +13,12 @@ public class Main {
         TreeNode baseFees = tree.initializeTree();
          
         Queue<String> info1 = new LinkedList<>(Arrays.asList("inState", "LateReg", "< 1 month", "motorcycle"));
-        User user1 = new User(info1);
+        User user1 = new User(info1,"Jack Daniels");
         tree.traverse(baseFees, user1);
         user1.displayReceipt();
         
         Queue<String> info2 = new LinkedList<>(Arrays.asList("outState", "notLateReg", "car"));
-        User user2 = new User(info2);
+        User user2 = new User(info2,"Corey Hill");
         tree.traverse(baseFees, user2);
         user2.displayReceipt();
     }
